@@ -1,0 +1,48 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const defaultDescription =
+  "I'm Rabii Luena, a software developer focused on frontend and mobile apps using React and React Native.";
+
+const { title, description = defaultDescription } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="rabii, rabii luena, luena, sofware developer, software engineer, frontend, frontend developer, react, react-native"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rbluena.vercel.app/" />
+    <meta property="og:title" content="Rabii Luena - Portfolio" />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/assets/meta.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rbluena.vercel.app/" />
+    <meta property="twitter:title" content="Rabii Luena - Portfolio" />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="/assets/meta.png" />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body class="min-h-screen">
+    <slot />
+  </body>
+</html>
