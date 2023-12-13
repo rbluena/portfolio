@@ -32,7 +32,7 @@ const { title, imgUrl, description, urls, stacks } = Astro.props;
   >
     <div class="relative w-full h-full overflow-hidden">
       <div
-        class="h-fit w-[95%] p-2 rounded-sm absolute top-[80%] font-medium space-y-2 group-hover:-translate-y-2/3 transition-transform"
+        class="h-full w-[95%] p-2 rounded-sm absolute max-h-full overflow-y-auto font-medium space-y-2 translate-y-[75%] md:translate-y-[85%] group-hover:translate-y-0 transition-transform"
       >
         <p class="text-2xl rounded-md w-fit font-bold">{title}</p>
         <p class="font-normal text-slate-700 text-sm">
@@ -52,7 +52,7 @@ const { title, imgUrl, description, urls, stacks } = Astro.props;
         <div class="flex items-center gap-4">
           <a
             href={urls.site}
-            class="rounded-full inline-block border border-slate-400"
+            class="rounded-full inline-block border border-slate-400 hover:scale-90 transition-transform"
           >
             <Icon
               name="mdi:arrow-top-right-thick"
@@ -65,7 +65,7 @@ const { title, imgUrl, description, urls, stacks } = Astro.props;
             urls.github?.length ? (
               <a
                 href={urls.github}
-                class="rounded-full inline-block border border-slate-400"
+                class="rounded-full inline-block border border-slate-400 hover:scale-90 transition-transform"
               >
                 <Icon name="mdi:github" class="w-10 h-10 text-indigo-700" />
                 <span class="sr-only">Visit {title} github</span>
