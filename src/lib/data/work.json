@@ -1,0 +1,64 @@
+{
+  "data": {
+    "penoola": {
+      "company": "Penoola",
+      "position": "Founder & Fullstack Developer",
+      "location": "Nairobi, Kenya",
+      "from": "Current",
+      "to": null,
+      "description": ["I am a founder and part-time fullstack developer."]
+    },
+    "bejamas": {
+      "company": "Bejemas",
+      "position": "Frontend Developer",
+      "location": "Remote, Poland",
+      "from": "Sep 2021",
+      "to": "Apr 2022",
+      "image": "",
+      "description": [
+        "I was part of agile team responsible for feature development and bug fixes.",
+        "Supported our clients rolling out features in every two weeks sprint.",
+        "Worked for Dr. Smile project."
+      ]
+    },
+    "asteyo": {
+      "company": "Asteyo",
+      "position": "Founder",
+      "location": "Nairobi, Kenya",
+      "type": "Seasonal",
+      "from": "Nov 2020",
+      "to": "June 2021",
+      "project": "Asteyo - Bajeti",
+      "url": "",
+      "image": "asteyo.png",
+      "description": [
+        "Built two products which ended into market validation stage.",
+        "Did the branding and UI designs for the products using Figma.",
+        "Played the role of fullstack developer and project manager."
+      ]
+    },
+    "am": {
+      "company": "AM2Studio",
+      "position": "Frontend Developer",
+      "location": "Remote, Croatia",
+      "type": "Contract",
+      "from": "Jul 2018",
+      "to": "Mar 2020",
+      "image": "am2studio.svg",
+      "description": [
+        "I was part of agile team responsible for feature development and bug fixes."
+      ]
+    },
+
+    "cloudboost": {
+      "company": "HackerBay, Inc",
+      "position": "Software Developer",
+      "location": "Remote, India",
+      "type": "Contract",
+      "from": "Nov 2017",
+      "to": "June 2018",
+      "image": "hackerbay.svg",
+      "description": ["Working with amazing details.."]
+    }
+  }
+}
