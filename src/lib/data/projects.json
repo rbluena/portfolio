@@ -1,0 +1,54 @@
+{
+  "data": {
+    "penoola": {
+      "title": "Penoola",
+      "description": "We help people find and book virtual meetings with professionals or prominent people.",
+      "url": "https://penoola.com/find",
+      "stacks": [
+        "NextJS",
+        "TailwindCSS",
+        "Vercel",
+        "PostgreSQL",
+        "Prisma",
+        "Dyte",
+        "RESTful",
+        "Redis",
+        "Knock App"
+      ],
+      "features": [
+        "Authentication",
+        "Video calling",
+        "Notification",
+        "Cron Jobs"
+      ]
+    },
+    "visula": {
+      "title": "Visula",
+      "description": "Our app targets to improve the ability to design and migrate schemas, data seeding, and perform AI-assisted ETL operations for your favorite CMS",
+      "url": "https://visula.vercel.app",
+      "github": "https://github.com/rbluena/visula",
+      "stacks": [
+        "NextJS",
+        "TailwindCSS",
+        "Vercel",
+        "PostgreSQL",
+        "Prisma",
+        "Zustand",
+        "React Flow"
+      ],
+      "features": [
+        "Schema design",
+        "Schema deployment",
+        "Fake content generation for schema"
+      ]
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Portfolio and showcasing site for Rabii Luena.",
+      "url": "https://rbluena.vercel.app",
+      "github": "https://github.com/rbluena/rabii-porfolio",
+      "stacks": ["Astro", "TailwindCSS", "Vercel"],
+      "features": null
+    }
+  }
+}

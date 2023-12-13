@@ -1,0 +1,46 @@
+---
+import SectionContainer from "@/components/SectionContainer.astro";
+import projects from "@/data/projects.json";
+import Wrapper from "./Wrapper.astro";
+import ProjectCard from "./ProjectCard.astro";
+
+import localPenoolaImage from "@/assets/project_penoola.png";
+import localVisulaImage from "@/assets/project_visula.png";
+import localPortfolioImage from "@/assets/project_portfolio.png";
+---
+
+<SectionContainer title="Featured projects">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
+    <ProjectCard
+      title={projects.data.penoola.title}
+      imgUrl={localPenoolaImage}
+      urls={{
+        site: projects.data.penoola.url,
+      }}
+      description={projects.data.penoola.description}
+      stacks={projects.data.penoola.stacks}
+    />
+
+    <ProjectCard
+      imgUrl={localVisulaImage}
+      title={projects.data.visula.title}
+      description={projects.data.visula.description}
+      urls={{
+        site: projects.data.visula.url,
+        github: projects.data.visula.github,
+      }}
+      stacks={projects.data.visula.stacks}
+    />
+
+    <ProjectCard
+      imgUrl={localPortfolioImage}
+      title={projects.data.portfolio.title}
+      description={projects.data.portfolio.description}
+      urls={{
+        site: projects.data.portfolio.url,
+        github: projects.data.portfolio.github,
+      }}
+      stacks={projects.data.portfolio.stacks}
+    />
+  </div>
+</SectionContainer>
