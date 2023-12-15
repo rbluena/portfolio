@@ -6,6 +6,7 @@ import ProjectCard from "./ProjectCard.astro";
 import localPenoolaImage from "@/assets/project_penoola.png";
 import localVisulaImage from "@/assets/project_visula.png";
 import localPortfolioImage from "@/assets/project_portfolio.png";
+import localAsteyoImage from "@/assets/project_asteyo.png";
 ---
 
 <SectionContainer title="Featured projects">
@@ -41,6 +42,17 @@ import localPortfolioImage from "@/assets/project_portfolio.png";
       }}
       stacks={projects.data.portfolio.stacks}
     />
+
+    <ProjectCard
+      imgUrl={localAsteyoImage}
+      title={projects.data.asteyo.title}
+      description={projects.data.asteyo.description}
+      urls={{
+        github: projects.data.asteyo.github,
+      }}
+      stacks={projects.data.asteyo.stacks}
+    />
+
     <div class="relative w-full h-full bg-slate-200">
       <iframe
         style="border: 1px solid rgba(0, 0, 0, 0.1);"

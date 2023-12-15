@@ -7,7 +7,7 @@ interface Props {
   description?: string;
   imgUrl: ImageMetadata;
   urls: {
-    site: string;
+    site?: string;
     github?: string;
   };
   stacks: string[];
@@ -17,7 +17,7 @@ const { title, imgUrl, description, urls, stacks } = Astro.props;
 ---
 
 <div
-  class="w-full group relative block rounded-lg border border-slate-300 group"
+  class="w-full group relative block rounded-lg border border-slate-300 group max-h-[300px] overflow-hidden"
 >
   <Image
     src={imgUrl}
@@ -50,16 +50,20 @@ const { title, imgUrl, description, urls, stacks } = Astro.props;
         </div>
 
         <div class="flex items-center gap-4">
-          <a
-            href={urls.site}
-            class="rounded-full inline-block border border-slate-400 hover:scale-90 transition-transform"
-          >
-            <Icon
-              name="mdi:arrow-top-right-thick"
-              class="w-10 h-10 text-indigo-700"
-            />
-            <span class="sr-only">Visit {title} URL</span>
-          </a>
+          {
+            urls.site?.length ? (
+              <a
+                href={urls.site}
+                class="rounded-full inline-block border border-slate-400 hover:scale-90 transition-transform"
+              >
+                <Icon
+                  name="mdi:arrow-top-right-thick"
+                  class="w-10 h-10 text-indigo-700"
+                />
+                <span class="sr-only">Visit {title} URL</span>
+              </a>
+            ) : null
+          }
 
           {
             urls.github?.length ? (

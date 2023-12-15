@@ -7,6 +7,8 @@
       "stacks": [
         "NextJS",
         "TailwindCSS",
+        "React Query",
+        "Zod",
         "Vercel",
         "PostgreSQL",
         "Prisma",
@@ -46,9 +48,23 @@
       "title": "Portfolio",
       "description": "Portfolio and showcasing site for Rabii Luena.",
       "url": "https://rbluena.vercel.app",
-      "github": "https://github.com/rbluena/rabii-porfolio",
+      "github": "https://github.com/rbluena/porfolio",
       "stacks": ["Astro", "TailwindCSS", "Vercel"],
       "features": null
+    },
+    "asteyo": {
+      "title": "Asteyo",
+      "description": "Web application for scheduling and organizing public events.",
+      "github": "https://github.com/rbluena/timeline",
+      "stacks": [
+        "NextJS",
+        "TailwindCSS",
+        "MongoDB",
+        "NodeJS",
+        "RESTful",
+        "Redux"
+      ],
+      "features": ["Authentication"]
     }
   }
 }
