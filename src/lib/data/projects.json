@@ -48,14 +48,14 @@
       "title": "Portfolio",
       "description": "Portfolio and showcasing site for Rabii Luena.",
       "url": "https://rbluena.vercel.app",
-      "github": "https://github.com/rbluena/porfolio",
+      "github": "https://github.com/rbluena/portfolio",
       "stacks": ["Astro", "TailwindCSS", "Vercel"],
       "features": null
     },
     "asteyo": {
       "title": "Asteyo",
       "description": "Web application for scheduling and organizing public events.",
-      "github": "https://github.com/rbluena/timeline",
+      "github": "https://github.com/rbluena/timetable",
       "stacks": [
         "NextJS",
         "TailwindCSS",
