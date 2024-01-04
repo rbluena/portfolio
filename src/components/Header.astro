@@ -1,42 +1,9 @@
 ---
-import Icon from "astro-icon";
-import personalData from "@/data/me.json";
-import Wrapper from "./Wrapper.astro";
-import Link from "./ui/Link.astro";
-import Nav from "./Nav.astro";
+import Nav from "@/components/Nav.astro";
 ---
 
-<header class="md:min-h-screen md:flex md:items-center text-left">
+<header>
   <Nav />
 
-  <Wrapper>
-    <span class="text-xs font-medium my-8 block md:text-sm">Hello! Meet,</span>
-    <h1 class="font-[950] text-5xl tracking-wider md:text-7xl">
-      {personalData.name}
-    </h1>
-    <h2 class="text-xl text-slate-500 font-medium my-2 md:text-3xl">
-      {personalData.title_emoji}
-    </h2>
-    <p class="font-normal italic max-w-xl my-6 text-lg md:text-xl">
-      Building scalable and performant frontend and fullstack web applications
-      using
-      <strong>React</strong>, <strong>React Native</strong> and
-      <strong>NodeJS</strong>.
-    </p>
-
-    <div class="flex justify-start gap-x-4 md:my-12">
-      <Link href={personalData.social.linkedin}>
-        <span class="sr-only">linkedin profile</span>
-        <Icon name="mdi:linkedin" class="w-8 h-8" />
-      </Link>
-      <Link href={personalData.social.github}>
-        <span class="sr-only">github profile</span>
-        <Icon name="mdi:github" class="w-8 h-8" />
-      </Link>
-      <Link href={personalData.social.twitter}>
-        <span class="sr-only">twitter profile</span>
-        <Icon name="mdi:twitter" class="w-8 h-8" />
-      </Link>
-    </div>
-  </Wrapper>
+  <slot />
 </header>
