@@ -3,9 +3,12 @@ import Icon from "astro-icon";
 import personalData from "@/data/me.json";
 import Wrapper from "./Wrapper.astro";
 import Link from "./ui/Link.astro";
+import Nav from "./Nav.astro";
 ---
 
 <header class="md:min-h-screen md:flex md:items-center text-left">
+  <Nav />
+
   <Wrapper>
     <span class="text-xs font-medium my-8 block md:text-sm">Hello! Meet,</span>
     <h1 class="font-[950] text-5xl tracking-wider md:text-7xl">
@@ -21,7 +24,7 @@ import Link from "./ui/Link.astro";
       <strong>NodeJS</strong>.
     </p>
 
-    <div class="flex gap-x-4 md:my-12">
+    <div class="flex justify-start gap-x-4 md:my-12">
       <Link href={personalData.social.linkedin}>
         <span class="sr-only">linkedin profile</span>
         <Icon name="mdi:linkedin" class="w-8 h-8" />

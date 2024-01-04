@@ -1,0 +1,27 @@
+---
+import Icon from "astro-icon";
+import Link from "./ui/Link.astro";
+---
+
+<nav
+  class="flex w-full justify-between list-none max-w-fit px-8 py-2 rounded-full shadow-lg border border-slate-200 fixed top-4 divide-x divide-violet-200 *:text-sm *:sm:text-base *:text-violet-100 bg-violet-950 left-1/2 -translate-x-1/2 z-50 *:px-2"
+>
+  <li class="flex items-center hover:text-white">
+    <Link href="/">
+      <Icon name="mdi:home" class="size-4" />
+       Home
+    </Link>
+  </li>
+  <li class="flex items-center hover:text-white">
+    <Link href="/about">
+      <Icon name="mdi:user" class="size-4" />
+       About
+    </Link>
+  </li>
+  <li class="flex items-center hover:text-white">
+    <Link href="/projects">
+      <Icon name="mdi:view-dashboard" class="size-4 inline-block" />
+       Projects
+    </Link>
+  </li>
+</nav>
