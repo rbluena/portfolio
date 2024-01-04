@@ -12,7 +12,7 @@ const { href, size = "md", ...props } = Astro.props;
 
 <a
   href={href}
-  class={cn("hover:via-violet-600 px-0 flex items-center gap-x-1", {
+  class={cn("px-0 flex items-center gap-x-1", {
     "text-md": size === "md",
     "text-sm": size === "sm",
     "text-lg": size === "lg",
