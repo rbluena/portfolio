@@ -11,7 +11,7 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.0.3
     version: 5.0.3(astro@4.0.3)(tailwindcss@3.3.6)
-  '@fontsource/manrope':
+  '@fontsource-variable/manrope':
     specifier: ^5.0.18
     version: 5.0.18
   astro:
@@ -633,8 +633,8 @@ packages:
     dev: false
     optional: true
 
-  /@fontsource/manrope@5.0.18:
-    resolution: {integrity: sha512-rcH+NXafXbKaLU+xS5VRAOBvI1FOf2VvLUYv3TQXpF9HETtpWwLb9+/4N/kFOA/0YneqkQal+YTqTYEmqGip1g==}
+  /@fontsource-variable/manrope@5.0.18:
+    resolution: {integrity: sha512-BmTWanceVCX3/xAY0VhBLM9fwEwe+Z/jR3/EPDLxas6+b3gnBChI+MYh+vMxDPEavfpEhcQptCCNJ3kQxn07iw==}
     dev: false
 
   /@img/sharp-darwin-arm64@0.33.0:
