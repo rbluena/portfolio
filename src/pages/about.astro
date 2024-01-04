@@ -8,7 +8,7 @@ import personalData from "@/data/me.json";
 import Link from "@/components/ui/Link.astro";
 import Icon from "astro-icon";
 
-import profileImageUrl from "@/assets/profile.jpg";
+import profileImageUrl from "@/assets/profile.png";
 ---
 
 <Layout title="About">
@@ -41,16 +41,39 @@ import profileImageUrl from "@/assets/profile.jpg";
         <article class="py-8 space-y-6 text-lg">
           <h3 class="text-2xl font-[950]">Specialization</h3>
 
-          <ul class="list-disc list-inside font-medium">
+          <ul
+            class="list-disc list-inside font-medium grid grid-cols-1 md:grid-cols-2 md:gap-x-4 lg:grid-cols-3"
+          >
             <li>JavaScript/TypeScript</li>
             <li>NextJS</li>
-            <li>NodeJS</li>
-            <li>Prisma</li>
-            <li>React Native</li>
-            <li>RESTful API</li>
             <li>TailwindCSS</li>
+            <li>Radix</li>
+            <li>Storybook</li>
+            <li>React Native</li>
+            <li>Playwright</li>
+            <li>RTL</li>
             <li>Redux</li>
             <li>Zustand</li>
+            <li>NodeJS</li>
+            <li>Prisma</li>
+            <li>RESTful API</li>
+            <li>Contentful</li>
+          </ul>
+        </article>
+        <article class="py-8 space-y-6 text-lg">
+          <h3 class="text-2xl font-[950]">Striving for:</h3>
+
+          <ul
+            class="list-disc list-inside font-medium grid grid-cols-1 md:grid-cols-2 md:gap-x-4 lg:grid-cols-3"
+          >
+            <li>Usability</li>
+            <li>Accessibility</li>
+            <li>Scalability</li>
+            <li>Testability</li>
+            <li>Responsiveness</li>
+            <li>Performance</li>
+            <li>SEO</li>
+            <li>Security</li>
           </ul>
         </article>
       </div>
@@ -58,7 +81,7 @@ import profileImageUrl from "@/assets/profile.jpg";
       <!-- Profile image -->
       <div class="min-w-80">
         <div
-          class="size-40 border-4 shadow-2xl border-separate border-violet-950 relative overflow-hidden md:size-72 fill-transparent rotate-6 rounded-lg"
+          class="size-40 bg-violet-950 rounded-full border-4 shadow-2xl border-separate border-violet-950 relative overflow-hidden md:size-72 fill-transparent rotate-6"
         >
           <Image
             src={profileImageUrl}
@@ -66,7 +89,7 @@ import profileImageUrl from "@/assets/profile.jpg";
             height={700}
             alt="profile"
             loading="lazy"
-            class="object-cover grayscale absolute after:absolute after:-inset-1 after:bg-cover after:translate-x-2"
+            class="object-cover grayscale absolute after:absolute after:-inset-1 -translate-y-8"
           />
         </div>
 
