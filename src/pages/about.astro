@@ -70,22 +70,24 @@ import profileImageUrl from "@/assets/profile.jpg";
           />
         </div>
 
-        <div class="my-16 space-y-5">
+        <div class="my-16 flex items-center gap-x-4 md:space-y-5 md:block">
           <Link href={personalData.social.github}>
-            <Icon name="mdi:github" class="size-6" />
-             GitHub
+            <Icon name="mdi:github" class="size-8 md:size-6" />
+            <span class="sr-only md:not-sr-only">GitHub</span>
           </Link>
           <Link href={personalData.social.linkedin}>
-            <Icon name="mdi:linkedin" class="size-6" />
-             LinkedIn
+            <Icon name="mdi:linkedin" class="size-8 md:size-6" />
+            <span class="sr-only md:not-sr-only">LinkedIn</span>
           </Link>
           <Link href={personalData.social.twitter}>
-            <Icon name="mdi:twitter" class="size-6" />
-             Twitter
+            <Icon name="mdi:twitter" class="size-8 md:size-6" />
+            <span class="sr-only md:not-sr-only">Twitter</span>
           </Link>
           <Link href="mail:rbluena@gmail.com">
-            <Icon name="mdi:envelope" class="size-6" />
-             rbluena[at]gmail[dot]com
+            <Icon name="mdi:envelope" class="size-8 md:size-6" />
+            <span class="sr-only md:not-sr-only">
+              rbluena[at]gmail[dot]com</span
+            >
           </Link>
         </div>
       </div>
